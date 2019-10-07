@@ -1,0 +1,55 @@
+#container {
+  background-color: skyblue;
+  height: 300px;
+  text-align: center;
+}
+
+#broom01 {
+  width: 120px;
+  height: 120px;
+  margin: 50px 40px;
+  animation-name: fly01;
+  animation-duration: 2000ms;
+  /*2s*/
+  animation-iteration-count: infinite;
+  /*5 = after 5 times stop*/
+}
+
+@keyframes fly01 {
+  0% {
+    transform: translateY(20px);
+  }
+
+  50% {
+    transform: translateY(60px);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+#broom02 {
+  width: 120px;
+  height: 120px;
+  margin: 0px 40px;
+  animation-name: fly02;
+  animation-duration: 2000ms;
+  /*2s*/
+  animation-iteration-count: infinite;
+  /*5 = after 5 times stop*/
+}
+
+@keyframes fly02 {
+  0% {
+    transform: translateX(20px);
+  }
+
+  50% {
+    transform: translateX(60px);
+  }
+
+  100% {
+    transform: translateX(20px);
+  }
+}
